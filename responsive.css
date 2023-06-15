@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap");
+
+:root {
+  --main-color: #d3ad7f;
+  --black: #13131a;
+  --text-hero: #e7e7e7e3;
+  --background: #010103;
+  --bg-header-foot: #3a1b04;
+  --background: #010103;
+  --bg-header-foot: #3a1b04;
+  --bg-cards-img: #271609;
+  --bg-cards: #5a2900;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+body {
+  background: var(--background);
+}
+
+/* --------------------------------------------------------------------------------------- */
+/* --------------------------------------MEDIA QUERYS--------------------------------------- */
+/* --------------------------------------------------------------------------------------- */
+
+/* ------------------------------Notebook--------------------------- */
+/* @media screen and (max-width: 1328px) { */
+@media (width <= 1328px){
+  .home .home-imagen img {
+    display: none;
+  }
+
+  .gallery .galeria-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .gallery .galeria-img > div,
+  img {
+    max-width: 60vh;
+  }
+}
+
+/* -------------------------------Tablet-------------------------- */
+/* @media screen and (max-width: 995px)*/ 
+@media (width <= 995px) { 
+  #menu-brg {
+    position: absolute;
+    display: block;
+    right: 2rem;
+    top: 2.8rem;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.8rem;
+    z-index: 2
+  }
+
+  header img {
+    margin-left: calc(45%);
+  }
+
+  header input{
+    display: none;
+  }
+
+  .navbar {
+    position: absolute;
+    z-index: -5;
+    width: 50%;
+    top: 7rem;
+    left: 50%;
+    right: 0;
+    flex-direction: column;
+    background-color: #3a1b04;
+    align-items: center;
+    gap: 30px;
+    padding: 40px 20px;
+    border: 2px solid #fff;
+    border-top: 0;
+    transform: translateY(-150%);
+    transition: 0.08s ease-in;
+  }
+
+  #toggle-menu:checked ~ .navbar {
+    transition: 0.3s ease-out;
+    transform: translateY(0%);
+  }
+
+  .navbar a:focus > .navbar {
+    transform: translateY(-80%);
+    color: rgb(0, 0, 0);
+  }
+
+  .navbar a {
+    font-size: 20px;
+  }
+
+  .navbar a:hover {
+    color: var(--main-color);
+  }
+
+  .icons {
+    margin-right: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    right: 2rem;
+    top: 7rem;
+    color: #fff;
+    font-size: 1.8rem;
+  }
+
+  .icons a {
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+
+  .login-list {
+    position: absolute;
+    top: 7rem;
+    background-color: #3a1b04;
+    width: 30%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    border: 2px solid #fff;
+    border-top: 0;
+    opacity: 0;
+    transition: 0.08s ease-in;
+  }
+
+  #toggle-login:checked ~ .login-list {
+    transition: 0.3s ease-out;
+    opacity: 100%;
+  }
+  /* ---------------------------hasta aquiiiiii------------------- */
+  .container-hero #home-texto {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .cards-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .section-about {
+    box-sizing: content-box;
+  }
+
+  .container-about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .cards-section {
+    padding: 0.4rem;
+  }
+
+  .container-card {
+    width: 100%;
+    display: flex;
+    justify-content: stretch;
+    gap: 0.2rem;
+    padding: 0.4rem;
+  }
+
+  .card-box {
+    width: 60%;
+    text-align: center;
+  }
+
+  .card-box img {
+    width: 80%;
+    height: 20vw;
+  }
+
+  .galeria-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .galeria-img img {
+    width: 50vw;
+    height: 50vw;
+  }
+
+  .galeria-img > .img2,
+  .img5,
+  .img7 {
+    display: none;
+  }
+
+  .galeria-img > .text1 h5,
+  .text2 h5 {
+    font-family: "Kalam", cursive;
+    color: var(--main-color);
+    background-color: var(--bg-cards-img);
+    padding: 5px;
+  }
+
+  .form .grid-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .grid-form > img,
+  .contact-form {
+    max-width: 65vw;
+  }
+
+  .menu-footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60vw;
+    align-items: center;
+    text-align: center;
+  }
+
+  .copyright iframe,
+  p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: 50vw;
+  }
+}
+
+/* ------------------------------------Mobile--------------------------- */
+/* @media screen and (max-width: 550px)  */
+  @media (width <= 550px){
+  header img {
+    margin-left: 0;
+  }
+
+  .container-hero {
+    text-align: center;
+    display: flex;
+  }
+
+  .container-hero .home-texto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .container-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 4rem;
+  }
+
+  .card-box img {
+    width: 60%;
+    height: 35vw;
+  }
+
+  .card-box h6 {
+    font-size: 20px;
+    color: #f69e0fe7;
+  }
+
+  .section-about,
+  .container-about {
+    padding: 6rem 0.5rem;
+  }
+
+  .gallery {
+    padding: 1rem 2rem;
+  }
+
+  .galeria-img img {
+    width: fit-content;
+    min-height: 50vw;
+  }
+
+  .galeria-img > .book1,
+  .book2,
+  .book3 {
+    width: fit-content;
+  }
+
+  .gallery,
+  .form,
+  .grid-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .galeria-img > .text1,
+  .text2 {
+    gap: 0;
+  }
+
+  .form h2 {
+    font-size: 2.5rem;
+  }
+
+  .contact-form button {
+    color: #010103;
+    width: auto;
+  }
+
+  .contact-form textarea {
+    width: 90%;
+  }
+
+  .contact-info .social-icons {
+    width: 15rem;
+    gap: 0.2rem;
+  }
+
+  .copyright iframe,
+  p {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60vw;
+    align-items: center;
+  }
+}
