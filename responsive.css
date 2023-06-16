@@ -30,9 +30,9 @@ body {
 /* --------------------------------------MEDIA QUERYS--------------------------------------- */
 /* --------------------------------------------------------------------------------------- */
 
-/* ------------------------------Notebook--------------------------- */
-/* @media screen and (max-width: 1328px) { */
-@media (width <= 1328px){
+/* ------------------------------Desktop--------------------------- */
+
+@media screen and (max-width: 1328px) {
   .home .home-imagen img {
     display: none;
   }
@@ -50,8 +50,8 @@ body {
 }
 
 /* -------------------------------Tablet-------------------------- */
-/* @media screen and (max-width: 995px)*/ 
-@media (width <= 995px) { 
+
+@media screen and (max-width: 995px) { 
   #menu-brg {
     position: absolute;
     display: block;
@@ -145,7 +145,8 @@ body {
     transition: 0.3s ease-out;
     opacity: 100%;
   }
-  /* ---------------------------hasta aquiiiiii------------------- */
+
+
   .container-hero #home-texto {
     display: flex;
     align-items: center;
@@ -255,8 +256,8 @@ body {
 }
 
 /* ------------------------------------Mobile--------------------------- */
-/* @media screen and (max-width: 550px)  */
-  @media (width <= 550px){
+
+@media screen and (max-width: 550px) {
   header img {
     margin-left: 0;
   }
