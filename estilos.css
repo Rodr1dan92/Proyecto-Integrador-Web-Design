@@ -456,16 +456,17 @@ header > #toggle-menu,
 
 .grid-form img {
   width: 90%;
-  height: 75%;
+  height: 65vh;
 }
+
 .grid-form form {
   width: 90%;
-  height: 75%;
+  height: 65vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  gap: 0.5em;
+  justify-content: center;
+  gap: 2em;
 }
 .contact-form {
   padding: 1.2em;
@@ -473,7 +474,7 @@ header > #toggle-menu,
 
 .contact-form label {
   color: var(--main-color);
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .contact-form input {
@@ -487,17 +488,17 @@ header > #toggle-menu,
 }
 
 .contact-form input::placeholder {
-  color: var(--black);
+  color: silver;
   text-align: center;
-  font-size: 12px;
+  font-size: 18px;
 }
+
 .contact-form button {
-  margin-top: 5px;
+  margin-top: 2em;
   width: 40%;
-  height: 1.8em;
-  border-radius: 30px;
+  height: 2em;
   background-color: rgb(228, 192, 65);
-  font-size: 0.6em;
+  font-size: 1em;
   font-weight: bolder;
   cursor: pointer;
   transition: 0.5s;

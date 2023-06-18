@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+header a img{
+  width: 5rem;
+}
+
+html {
+  background: url(./assets/background-register.jpg) center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+
+.container {
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .logo_cb{
+  width: 2rem;
+}
+
+.container .imagen img {
+  width: 100%;
+  height: 80vh;
+  border-radius: 15px;
+}
+
+.formulario {
+  width: 30%;
+  height: 80vh;
+  background-color: #4e2702;
+  filter: url('#gold-sunset');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  opacity: 0.8
+}
+
+.formulario form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.formulario h3 {
+  font-size: 40px;
+  color: #e7d340;
+  text-align: center;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e7d340;
+}
+
+.input {
+  position: relative;
+  width: 70%;
+  border-bottom: 2px solid gold;
+  padding-top: 1.5rem;
+}
+
+.input label {
+  top: 50%;
+  left: 27px;
+  color: rgb(255, 234, 5);
+  font-size: 1em;
+}
+
+
+.input input {
+  width: 100%;
+  height: 4vh;
+  background: transparent;
+  color: #fffbf7f6;
+  border: none;
+  outline: none;
+  font-size: 1.5em;
+  font-style: oblique;
+  padding: 4px 10px 0 8px;
+}
+
+.input i {
+  position: absolute;
+  left: 0;
+  font-size: 18px;
+  color: #e7d340;
+}
+
+.recordar {
+  display: flex;
+  justify-content: baseline;
+  gap: 2em;
+  margin: 15px;
+  font-size: 1em;
+  color: #e7d340;
+}
+
+.recordar label input {
+  margin-right: 5px;
+}
+
+.recordar a {
+  color: #e7d340;
+  text-decoration: none;
+}
+
+.recordar a:hover {
+  color: white;
+}
+
+button {
+  margin-top: 10px;
+  width: 60%;
+  height: 1.7rem;
+  border-radius: 30px;
+  background-color: rgb(228, 192, 65);
+  font-size: 1em;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+button:hover {
+  transform: scale(1.2);
+}
+
+.back{
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 7rem;
+}
+
+.back #logo_cb{
+  width: 3em;
+  border-radius: 50%;
+}
+
+.back #login{
+  color: #e7d340;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* ----------------------------MEDIA QUERY--------------------------------- */
+@media (max-width: 1200px) {
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  
+  .formulario {
+    padding: 2rem;
+    width: 50vw;
+  }
+
+  .formulario form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2px;
+  }
+}
+
+@media (max-width: 985px) {
+  .imagen img {
+    display: none;
+  }
+  .formulario {
+    width: 50vw;
+    height: 85vh;
+  }
+
+  .formulario h3 {
+    font-size: 45px;
+}
+}
+
+
+@media (max-width: 481px) {
+
+  .formulario {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+  }
+
+  .formulario form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2px;
+  }
+  
+  .formulario h3{
+    font-size: 30px;
+  }
+
+  .formulario div {
+    width: 60%;
+  }
+  .formulario button{
+    margin-top: 2em;
+  }
+
+  .formulario .back {
+    flex-direction: column;
+    gap: 1em;
+  }
+}
+
+@media (max-width: 318px) {
+
+  .formulario h3{
+    font-size: 15px;
+  }
+
+  .input input{
+    width: 40%;
+  }
+}
+

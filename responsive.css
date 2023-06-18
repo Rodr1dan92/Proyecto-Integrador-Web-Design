@@ -120,7 +120,7 @@ body {
 
   .icons a {
     cursor: pointer;
-    font-size: 1.2rem;
+    font-size: 25px;
   }
 
   .login-list {
@@ -133,17 +133,18 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     gap: 2rem;
     padding: 2rem 1rem;
     border: 2px solid #fff;
     border-top: 0;
-    opacity: 0;
+    transform: translateY(-20rem);
     transition: 0.08s ease-in;
   }
 
   #toggle-login:checked ~ .login-list {
     transition: 0.3s ease-out;
-    opacity: 100%;
+    transform: translateY(0);
   }
 
 
@@ -159,9 +160,14 @@ body {
     flex-direction: column;
   }
 
+<<<<<<< HEAD
+  .section-about, .container-about {
+    height: 70vh
+=======
   .section-about {
     box-sizing: content-box;
     height: 70vh;
+>>>>>>> 2e0c836e3e5b709de1649338f6d109642a6ddfd5
   }
 
   .container-about {
@@ -227,6 +233,11 @@ body {
     gap: 2rem;
   }
 
+  .grid-form .contact-form{
+    height: 50vh;
+    gap: 1.5em;
+  }
+
   .grid-form > img,
   .contact-form {
     max-width: 65vw;
@@ -264,6 +275,10 @@ body {
     margin-left: 0;
   }
 
+  .icons a {
+    font-size: 15px;
+  }
+
   .container-hero {
     text-align: center;
     display: flex;
@@ -275,11 +290,27 @@ body {
     justify-content: center;
   }
 
+  .section-about{
+    height: 90vh;
+    margin-bottom: 3rem;
+  }
+
+  .container-about{
+    height: 55rem;
+    padding: 3rem 0;
+  }
+
+  .cards-section h2{
+    margin-top: 20px;
+    font-size: 2rem;
+  }
+
   .container-card {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding: 4rem;
+    gap: 2em;
+    padding: 3rem;
   }
 
   .card-box img {
@@ -292,12 +323,15 @@ body {
     color: #f69e0fe7;
   }
 
+<<<<<<< HEAD
+=======
   .section-about,
   .container-about {
     padding: 0 0.5em;
     margin-bottom: 5em;
   }
 
+>>>>>>> 2e0c836e3e5b709de1649338f6d109642a6ddfd5
   .gallery {
     padding: 1rem 2rem;
   }
@@ -331,6 +365,14 @@ body {
     font-size: 2.5rem;
   }
 
+  .grid-form img{
+    display: none;
+  }
+
+  .grid-form .contact-form{
+    height: 60vh;
+  }
+
   .contact-form button {
     color: #010103;
     width: auto;
@@ -353,3 +395,5 @@ body {
     align-items: center;
   }
 }
+
+
