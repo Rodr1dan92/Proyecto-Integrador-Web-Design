@@ -160,14 +160,8 @@ body {
     flex-direction: column;
   }
 
-<<<<<<< HEAD
   .section-about, .container-about {
     height: 70vh
-=======
-  .section-about {
-    box-sizing: content-box;
-    height: 70vh;
->>>>>>> 2e0c836e3e5b709de1649338f6d109642a6ddfd5
   }
 
   .container-about {
@@ -175,7 +169,6 @@ body {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    height: 80vh;
   }
 
   .cards-section {
@@ -323,15 +316,7 @@ body {
     color: #f69e0fe7;
   }
 
-<<<<<<< HEAD
-=======
-  .section-about,
-  .container-about {
-    padding: 0 0.5em;
-    margin-bottom: 5em;
-  }
 
->>>>>>> 2e0c836e3e5b709de1649338f6d109642a6ddfd5
   .gallery {
     padding: 1rem 2rem;
   }
@@ -395,5 +380,3 @@ body {
     align-items: center;
   }
 }
-
-
