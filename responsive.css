@@ -161,7 +161,7 @@ body {
   }
 
   .section-about, .container-about {
-    height: 70vh
+    height: 100vh
   }
 
   .container-about {
@@ -227,7 +227,6 @@ body {
   }
 
   .grid-form .contact-form{
-    height: 50vh;
     gap: 1.5em;
   }
 
@@ -289,7 +288,7 @@ body {
   }
 
   .container-about{
-    height: 55rem;
+    height: 45rem;
     padding: 3rem 0;
   }
 
@@ -303,7 +302,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     gap: 2em;
-    padding: 3rem;
+    padding: 1rem 5rem;
   }
 
   .card-box img {
@@ -354,13 +353,14 @@ body {
     display: none;
   }
 
-  .grid-form .contact-form{
-    height: 60vh;
+  .contact-form input{
+    font-size: 10px;
   }
 
   .contact-form button {
     color: #010103;
-    width: auto;
+    margin-top: 1em;
+    width: 4em;
   }
 
   .contact-form textarea {
