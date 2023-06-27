@@ -282,6 +282,10 @@ body {
     justify-content: center;
   }
 
+  .home-texto h1{
+    font-size: 40px;
+  }
+
   .section-about{
     height: 90vh;
     margin-bottom: 3rem;
@@ -300,7 +304,7 @@ body {
   .container-card {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    justify-content: center;
     gap: 2em;
     padding: 1rem 5rem;
   }
